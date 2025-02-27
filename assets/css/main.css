@@ -6,16 +6,18 @@
     --primary-soft-taupe: #D8D0C4;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
-
 /* Transition and Hover Effects for Cards */
-a{
+a {
     text-decoration: none;
 
 }
-.navbar a{
+.nav-a {
+    height: 80px;
+}
+.navbar a {
     margin-left: 20px;
 }
 .navbar .collapse .navbar-nav .nav-item .nav-link {
@@ -23,48 +25,44 @@ a{
     font-size: 1.5rem;
     transition: color 0.3s ease;
     overflow-x: hidden;
-} 
+}
 .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
     color: green;
     font-weight: 700;
 }
-.hero-slider-wrapper{
-    margin-top: 118px;
+.hero-slider-wrapper {
+    margin-top: 95px;
 }
 
-#about{
+#about {
     background-color: #eff4ec;
 }
 
 /*--- service section ---*/
 .appointment-form {
-    background-color: #e9eff9; 
+    background-color: rgba(200, 234, 252, 255);
     padding: 0.5rem 1.5rem;
     border-radius: 1rem;
     box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .1);
     width: 100%;
     max-width: 600px;
-    margin:2rem auto;
+    margin: 2rem auto;
 }
-
 .appointment-form .form-title {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: var(--primary-soft-blue);
 }
-
 .appointment-form .form-group {
     margin-bottom: 5px;
 }
-
 .appointment-form label {
     font-size: 1rem;
     color: var(--primary-muted-blue);
     display: block;
     margin-bottom: 0.5rem;
 }
-
 .appointment-form input,
 .appointment-form textarea {
     width: 100%;
@@ -81,12 +79,10 @@ a{
     resize: none;
     padding-left: 2rem;
 }
-
 .appointment-form input:focus,
 .appointment-form textarea:focus {
     border: 2px solid #3266ba;
 }
-
 .appointment-form input[type="submit"] {
     width: 100%;
     padding: 0;
@@ -98,11 +94,9 @@ a{
     border-radius: 5rem;
     transition: background-color 0.3s ease;
 }
-
 .appointment-form input[type="submit"]:hover {
     background-color: #0188df;
 }
-
 .box {
     transition: background-color 0.3s ease, border 0.3s ease, transform 0.3s ease;
     background-color: #fff;
@@ -111,95 +105,95 @@ a{
     box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
 }
 .box:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .3); /* Enhance shadow on hover */
-    background-color: #e9eff9; 
+    transform: translateY(-10px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .3);
+    /* Enhance shadow on hover */
+    background-color: #e9eff9;
 
 }
-
 .card .box a h2 {
     font-size: 2rem;
     text-align: center;
     color: black !important;
     transition: color 0.3s ease;
 }
-
 .card .box a h2:hover {
     color: #3266ba !important;
     text-decoration: underline;
 }
-
 .card .box .icons a {
     font-size: 2rem;
     margin: 0.5rem;
     transition: color 0.3s ease;
     text-decoration: none !important;
 }
-
 .card .box .icons a:hover {
-    color: #3266ba; 
-    
+    color: #3266ba;
+
 }
 
 .animated-image {
-    animation: upDown 3s ease-in-out infinite; 
-    width: 100%; 
+    animation: upDown 3s ease-in-out infinite;
+    width: 100%;
     height: auto;
 }
 
 .review img {
     width: 150px;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
+    /* Maintain aspect ratio */
 }
-
 .image-text-section img {
     width: 100%;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
 }
 
 /* ----doctor section starts---- */
 
-.doctors .container .row .col-lg-4 .box img{
+.doctors .container .row .col-lg-4 .box img {
     border-radius: 50%;
 }
-.doctors .container .row .col-lg-4 .box{
-    background-color: #eff4ec; 
-    height: 400px;
+
+.doctors .container .row .col-lg-4 .box {
+    background-color: #eff4ec;
+    height: 350px;
 }
+
 /* ----doctor section ends---- */
 
 /* ----footer section starts---- */
 
-.footer{
+.footer {
     background-color: #3266ba !important;
 }
-.footer-headings{
-    font-family: 'Secondary Font', sans-serif; 
-    margin-bottom: 1.5rem; 
-    text-align: left; 
+.footer-headings {
+    font-family: 'Secondary Font', sans-serif;
+    margin-bottom: 1.5rem;
+    text-align: left;
     color: rgb(95, 218, 148);
-  }
-  
-  
-  .company-links{
+}
+
+
+.company-links {
     text-decoration: none;
     color: white;
     transition: 0.3s ease;
-  }
-  
-  .company-links:hover{
+}
+
+.company-links:hover {
     transform: translateX(3px);
     color: green;
     font-weight: bolder;
-    background-color: #e9eff9; 
+    background-color: #e9eff9;
 
-  }
-  
+}
+
 /* ---- Responsiveness ---- */
 @media (max-width: 768px) {
     .footer .mybox {
-        flex: 1 1 100%; /* Make each box take full width on smaller screens */
+        flex: 1 1 100%;
+        /* Make each box take full width on smaller screens */
     }
 
     .footer .mybox .logo {
@@ -215,15 +209,15 @@ a{
     }
 }
 
-
 /* ----footer section ends ---- */
 
-
 @keyframes upDown {
-    0%, 100% {
-        transform: translateY(0); 
+
+    0%,
+    100% {
+        transform: translateY(0);
     }
     50% {
-        transform: translateY(-15px);   
+        transform: translateY(-15px);
     }
 }
